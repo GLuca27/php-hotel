@@ -63,46 +63,16 @@
     </tr>
   </thead>
   <tbody class="table-group-divider">
+    <?php for( $i = 0; $i = count($hotels); $i++) { ?>
     <tr>
       <th scope="row">1</th>
-      <td><?php echo $hotels[0]['name']; ?></td>
-      <td><?php echo $hotels[0]['description']; ?></td>
-      <td><?php echo $hotels[0]['parking']; ?></td>
-      <td><?php echo $hotels[0]['vote']; ?></td>
-      <td><?php echo $hotels[0]['distance_to_center']; ?></td>
+      <td><?php echo $hotels[$i]['name']; ?></td>
+      <td><?php echo $hotels[$i]['description']; ?></td>
+      <td><?php echo $hotels[$i]['parking']; ?></td>
+      <td><?php echo $hotels[$i]['vote']; ?></td>
+      <td><?php echo $hotels[$i]['distance_to_center']; ?></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td><?php echo $hotels[1]['name']; ?></td>
-      <td><?php echo $hotels[1]['description']; ?></td>
-      <td><?php echo $hotels[1]['parking']; ?></td>
-      <td><?php echo $hotels[1]['vote']; ?></td>
-      <td><?php echo $hotels[1]['distance_to_center']; ?></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td><?php echo $hotels[2]['name']; ?></td>
-      <td><?php echo $hotels[2]['description']; ?></td>
-      <td><?php echo $hotels[2]['parking']; ?></td>
-      <td><?php echo $hotels[2]['vote']; ?></td>
-      <td><?php echo $hotels[2]['distance_to_center']; ?></td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td><?php echo $hotels[3]['name']; ?></td>
-      <td><?php echo $hotels[3]['description']; ?></td>
-      <td><?php echo $hotels[3]['parking']; ?></td>
-      <td><?php echo $hotels[3]['vote']; ?></td>
-      <td><?php echo $hotels[3]['distance_to_center']; ?></td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td><?php echo $hotels[4]['name']; ?></td>
-      <td><?php echo $hotels[4]['description']; ?></td>
-      <td><?php echo $hotels[4]['parking']; ?></td>
-      <td><?php echo $hotels[4]['vote']; ?></td>
-      <td><?php echo $hotels[4]['distance_to_center']; ?></td>
-    </tr>
+    <?php } ?>
     
   </tbody>
 </table>
