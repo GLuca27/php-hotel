@@ -39,8 +39,6 @@
         ],
 
     ];
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +62,7 @@
     </tr>
   </thead>
   <tbody class="table-group-divider">
-    <?php for( $i = 0; $i < $hotels; $i++) { ?>
+    <?php for( $i = 0; $i < count($hotels); $i++) { ?>
     <tr>
       <th scope="row">1</th>
       <td><?php echo $hotels[$i]['name']; ?></td>
